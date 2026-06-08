@@ -1,0 +1,89 @@
+php is a scripting server side language, it is used for making dynamic pages
+
+php means hypertext preprocessor
+
+in php comments are write in 3 ways 
+for single line comment 
+// , # 
+for multiline comment
+/*      */
+
+PHP uses an engine called the Zend Engine.
+
+
+variable
+-----------
+variable are containers to store data
+
+rules for php variable name 
+-------------------------------
+1. a variable must starts with $ sign, followed by variable name
+2. a variable name must be start with letter or underscore
+3. a variable name can not be start with digit 
+4. a variable name can conatin only alpha-numeric data like A-Z , a-z and 0-9
+5. a vaiarble name are case sensitive
+$age and $Age are different
+
+
+
+php is loosely and tightly both typed language according to mode 
+if u use strict mode then you have to specify data-type
+if u use  non-strict mode , or no mode at all you don't need to specify data-type 
+
+
+
+in php there are multiple types of data
+1. string
+2. int
+3. float
+4. bool
+5. array
+6. object
+7. null
+8. resource
+9. mixed
+
+
+
+use var_dump() method to get data type
+
+in php variable has 3 scope
+1. local = inside a function or method if a varible assigned then it has local scope bcz it is going to be accessed only in that func
+2. global = if it is defined outside of any method , then t has global scope 
+3. static =  when a func finsihed executing , all variables are deleted from storage, if we want that t will not be deleted then we use
+statis keyword with varible
+
+
+
+
+ in php for output we use "echo" , "print" and "print()" methods 
+
+
+
+ use define() function to craete a constant
+
+
+ match is similar to switch 
+ match return value while switch can not
+ match is a new way to handle multiple cases
+ match expression has strict comparison (===), while switch uses loose comparison (==)
+
+
+
+
+
+ $GLOBALS - a array that contains refrence to all global variable of the scripting
+ $_SERVER - hold web server configuration
+ $_REQUEST - hold request for data get post 
+ $_POST - receive HTTP POST request
+ $_GET - receive HTTP GET request
+ $_FILES - an array to upload items via http post method(file path , file type)
+ $_ENV - Holds environment variables 
+ $_COOKIE - An array of variables passed to the current script via HTTP Cookies
+ $_SESSION - An array of session variables
+
+
+
+ $_GET and $_POST are super globals , it means they can be accesible from anywhere or outside of scope
+ $_GET are visible to others , so we can not use that in secure data , and also it has 2000 chars limit
+ $_POST are not visibles to others , so we can use this in sensitive data like password and bank credential
